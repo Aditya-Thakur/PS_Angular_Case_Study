@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col center">
+            <div class="timer-counter">
+                <div class="title">Count down timer</div>
+                <div class="time">{{timeLeft}}</div>
+            </div>
+        </div>
+        <div class="col center">
+            <app-input (newTimerEvent)="getTimerData($event)" (newResetEvent)="resetTimer($event)"></app-input>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <app-logger [eventType]="changeEvent"></app-logger>
+        </div>
+        <div class="col center">
+            <app-counter class="background" [eventType]="changeEvent"></app-counter>
+        </div>
+    </div>
+</div>

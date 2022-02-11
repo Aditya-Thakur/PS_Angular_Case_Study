@@ -1,0 +1,81 @@
+[{
+        "name": "Jim",
+        "class": 9,
+        "section": "A",
+        "science": 95,
+        "socialScience": 85,
+        "computerScience": 92,
+        "mathematics": 98,
+        "english": 74
+    },
+    {
+        "name": "Dave",
+        "class": 9,
+        "section": "B",
+        "science": 94,
+        "socialScience": 95,
+        "computerScience": 90,
+        "mathematics": 95,
+        "english": 78
+    },
+    {
+        "name": "Raj",
+        "class": 9,
+        "section": "A",
+        "science": 91,
+        "socialScience": 87,
+        "computerScience": 54,
+        "mathematics": 85,
+        "english": 65
+    },
+    {
+        "name": "Brittany",
+        "class": 9,
+        "section": "B",
+        "science": 78,
+        "socialScience": 56,
+        "computerScience": 54,
+        "mathematics": 78,
+        "english": 98
+    },
+    {
+        "name": "Brad",
+        "class": 10,
+        "section": "A",
+        "science": 98,
+        "socialScience": 87,
+        "computerScience": 91,
+        "mathematics": 95,
+        "english": 76
+    },
+    {
+        "name": "Ross",
+        "class": 11,
+        "section": "B",
+        "science": 97,
+        "socialScience": 99,
+        "computerScience": 100,
+        "mathematics": 92,
+        "english": 98
+    },
+    {
+        "name": "monica",
+        "class": 9,
+        "section": "A",
+        "science": 97,
+        "socialScience": 67,
+        "computerScience": 84,
+        "mathematics": 95,
+        "english": 85
+    },
+    {
+        "name": "murial",
+        "class": 10,
+        "section": "A",
+        "science": 74,
+        "socialScience": 46,
+        "computerScience": 44,
+        "mathematics": 48,
+        "english": 48
+    }
+]

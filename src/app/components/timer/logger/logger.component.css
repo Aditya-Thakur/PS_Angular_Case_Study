@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 6px 10px;
+    background-color: rgb(92, 173, 92);
+}
+
+.logs {
+    height: 25vh;
+    text-align: justify;
+    display: flex;
+    flex-direction: left;
+    justify-content: left;
+    flex-direction: column;
+    padding: 6px 10px;
+    background-color: rgb(92, 173, 92);
+    overflow-y: scroll;
+}

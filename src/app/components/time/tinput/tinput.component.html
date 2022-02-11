@@ -1,0 +1,11 @@
+<form class="input-box">
+    <div class="row">
+        <div class="title">Enter timer limit: </div>
+        <input [(ngModel)]="timeInSec" type="number" name="timeInSec" min="0">
+        <div class="title"> Seconds</div>
+    </div>
+    <div class="row">
+        <button (click)="startTimer()" class="button button1">Start/Pause</button>
+        <button (click)="resetTimer()" class="button button2">Reset</button>
+    </div>
+</form>

@@ -1,0 +1,52 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="view-options">
+            <div class="view-option" [ngClass]="{active: view == 'grid'}" (click)="toggleView()">
+                <mat-icon aria-hidden="false" aria-label="Example home icon">window</mat-icon>
+            </div>
+            <div class="view-option" [ngClass]="{active: view == 'list'}" (click)="toggleView()">
+                <mat-icon aria-hidden="false" aria-label="Example home icon">list</mat-icon>
+
+            </div>
+        </div>
+        <div class="dropdown">
+            <select name="filter" (change)="filterPrice($event)">
+                <option value="Filter by price" selected disabled>Filter By Price</option>
+                <option value="low">low to high</option>
+                <option value="high">high to low</option>
+            </select>
+        </div>
+    </div>
+    <div class="content" *ngIf="products.length > 0; else loading">
+        <div *ngIf="view=='grid'" class="product-grid">
+            <div class="product" *ngFor="let product of products">
+                <div class="card">
+                    <img src="{{product.image}}" alt="{{product.title}}">
+                    <h4>{{product.title}}</h4>
+                    <p class="price">$ {{product.price}}</p>
+                    <p>{{product.description}}</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="view=='list'" class="product-list">
+            <div class="product" *ngFor="let product of products">
+                <div class="card">
+                    <div class="left">
+                        <img src="{{product.image}}" alt="{{product.title}}">
+                    </div>
+                    <div class="right">
+                        <h4>{{product.title}}</h4>
+                        <p class="price">$ {{product.price}}</p>
+                        <p>{{product.description}}</p>
+                        <p><button>Add to Cart</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-template #loading>
+        Loading your products...
+    </ng-template>
+</div>

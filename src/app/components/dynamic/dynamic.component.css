@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: darkseagreen;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: rgb(93, 151, 93);
+}
+
+.button {
+    background-color: white;
+    border: none;
+    color: #4c56af;
+    padding: 6px 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #4c56af;
+    color: white;
+}

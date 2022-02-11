@@ -1,0 +1,9 @@
+<div class="row">
+    <div [ngClass]="{'active': active === ''}" class="col" (click)="goTo('')">Home</div>
+    <div [ngClass]="{'active': active === 'route1'}" class="col" (click)="goTo('route1')">Route 1</div>
+    <div [ngClass]="{'active': active === 'route2'}" class="col" (click)="goTo('route2')">Route 2</div>
+    <div [ngClass]="{'active': active === 'route3'}" class="col" (click)="goTo('route3')">Route 3</div>
+    <div [ngClass]="{'active': active === 'route4'}" class="col" (click)="goTo('route4')">Route 4</div>
+    <div [ngClass]="{'active': active === 'route5'}" class="col" (click)="goTo('route5')">Route 5</div>
+    <div [ngClass]="{'active': active === 'route6'}" class="col" (click)="goTo('route6')">Route 6</div>
+</div>
