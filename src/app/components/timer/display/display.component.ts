@@ -52,7 +52,6 @@ export class DisplayComponent implements OnInit {
 
     resetTimer(data: number): void {
       this.changeEvent = 'reset';
-      clearInterval(this.interval);
       this.pauseTimer();
       this.timeLeft = data;
     }
